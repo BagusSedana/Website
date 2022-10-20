@@ -176,7 +176,7 @@ nav button {
 /* ==================== CATEGORY BUTTON ==================== */
 
 .category__button {
-  margin: 1rem 0;
+  margin: 10px 0;
   background: var(--color-dark);
   color: var(--color-primary);
   display: inline-block;
@@ -191,7 +191,7 @@ nav button {
   color: var(--color-dark);
   background-color: var(--color-primary);
   border: 1px solid var(--color-dark);
-  margin-top: 1rem !important;
+  margin: 10px 0 !important;
 }
 
 /* ==================== END CATEGORY BUTTON ==================== */
@@ -205,8 +205,9 @@ nav button {
 .post__thumbnail {
   height: auto;
   background-size: cover;
-  border-radius: var(--card-border-radius-1);
+  border-radius: var(--card-border-radius-2);
   margin-bottom: 1.6rem;
+  overflow: hidden;
 }
 
 .post__author {
@@ -218,7 +219,7 @@ nav button {
 .post__author__avatar {
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: var(--card-border-radius-3);
+  border-radius: var(--card-border-radius-2);
   overflow: hidden;
 }
 
@@ -254,6 +255,21 @@ nav button {
   grid-template-columns: repeat(3, 1fr);
   gap: 5rem;
   margin-bottom: 5rem;
+}
+
+/* ==================== CATEGORY BUTTON ==================== */
+
+.category__buttons {
+  padding: 3rem 0;
+  border-top: 2px solid var(--color-dark);
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.category__buttons__container {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
 }
 
 /* ==================== END POST ==================== */
